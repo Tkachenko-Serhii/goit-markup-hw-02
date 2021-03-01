@@ -3,16 +3,21 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
-  --white-color: #fff;
-  --black-color: #000;
+  --main-color: #fff;
+  --second-color: #000;
   --title-color: #212121;
   --link-color: #757575;
-  --background-section: #2f303a;
+  --background-color: #f5f4fa;
+  --background-section-color: #2f303a;
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --contact-info-conection-color: rgba(255, 255, 255, 0.6);
+  --line-color: #ececec;
+  --work-categories-color: #eeeeee;
 }
 
 body {
   font-family: var(--main-font);
-  background-color: var(--white-color);
+  background-color: var(--main-color);
 }
 .link {
   text-decoration: none;
@@ -43,10 +48,10 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-color);
+  color: var(--main-color);
   cursor: pointer;
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
 }
 
@@ -61,11 +66,11 @@ body {
 }
 
 .logo-text-white-theme {
-  color: var(--black-color);
+  color: var(--second-color);
 }
 
 .logo-text-dark-theme {
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .navigation-link {
@@ -117,14 +122,14 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .contact-info-connection {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-info-conection-color);
 }
 
 .contact-info-connection:hover,
@@ -133,7 +138,7 @@ body {
 }
 
 .footer {
-  background: var(--background-section);
+  background: var(--background-section-color);
 }
 /*========END FOOTER========*/
 /*================END COMMON STYLES================*/
@@ -141,7 +146,7 @@ body {
 /*================STUDIO================*/
 /*========HERO========*/
 .hero {
-  background-color: var(--background-section);
+  background-color: var(--background-section-color);
 }
 
 .hero-title {
@@ -151,7 +156,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: var(--main-color);
 }
 /*========END HERO========*/
 
@@ -198,7 +203,7 @@ body {
 .filter-buttons {
   /*position: absolute;*/
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -211,7 +216,7 @@ body {
 .filter-buttons:focus {
   background-color: var(--accent-color);
   cursor: pointer;
-  color: var(--white-color);
+  color: var(--main-color);
 }
 /*========END FILTER BUTTONS========*/
 
