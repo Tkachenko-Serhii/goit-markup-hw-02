@@ -19,6 +19,7 @@ body {
   font-family: var(--main-font);
   background-color: var(--main-color);
 }
+
 .link {
   text-decoration: none;
 }
@@ -130,11 +131,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contact-info-conection-color);
-}
-
-.contact-info-connection:hover,
-.contact-info-connection:focus {
-  color: var(--accent-color);
 }
 
 .footer {
